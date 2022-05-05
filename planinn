@@ -1,0 +1,17 @@
+- [ ] make the app work
+- [ ] not die
+- [x] add accounts to installed apps
+- [] register view in url pattern list
+- [x] logout path
+- [ ] in expenses/url add path to accounts
+- [ ] create templates in accounts
+- [ ] create a registration folder in templates
+- [ ] make login html in registration
+- [ ] add a <form=POST> into login html +
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
