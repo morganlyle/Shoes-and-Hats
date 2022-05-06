@@ -1,6 +1,4 @@
 from django.urls import path
-from receipts.views import ReceiptsTemplateView
+from receipts.views import ReceiptsListView
 
-urlpatterns = [
-    path("receipts/", ReceiptsTemplateView.as_view(), name="receipts")
-]
+urlpatterns = [path("", ReceiptsListView.as_view(), name="home")]

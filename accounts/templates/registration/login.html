@@ -2,9 +2,9 @@
 {%block content%}
   <body>
       <a href {% url 'home' %}>Home</a>
-    <form action="POST" input type="text" value="Log In">
+    <form method="post" input type="text" value="Log In">
       {% csrf_token %} {{form.as_p}}
-      <button type="button">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </body>
 {%endblock content%}

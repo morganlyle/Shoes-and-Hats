@@ -1,6 +1,6 @@
 {%extends 'base.html' %} {%block content%}
 <body>
-  <form action="POST" input type="text" value="Log In">
+  <form method="post">
     {% csrf_token %} {{form.as_p}}
     <button type="button">Submit</button>
   </form>

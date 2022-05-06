@@ -17,6 +17,7 @@ def signup(request):
             )
             user.save()
             login(request.user)
+
             return redirect("home")
 
     else:
