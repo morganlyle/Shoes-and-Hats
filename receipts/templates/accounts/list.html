@@ -1,0 +1,24 @@
+{%extends 'base.html'%}{%block content%}
+
+<main>
+  <h1>Accounts</h1>
+
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Account Number</th>
+      <th>Number of Reciepts</th>
+    </thead>
+    <tbody>
+    {%for item in accounts_list%}
+    <tr>
+      <td>{{item.name}}</td>
+      <td>{{item.number}}</td>
+      <td>{{item.receipts.all|length}}</td>
+    </tr>
+    {%endfor%}
+    </tbody>
+
+  </table>
+</mian>
+{%endblock content%}

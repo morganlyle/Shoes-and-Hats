@@ -6,6 +6,11 @@ from django.contrib.auth.forms import UserCreationForm, User
 
 
 # Create your views here.
+# request --> response
+#  request handler
+#  action
+
+
 def signup(request):
     if request.POST:
         form = UserCreationForm(request.POST)

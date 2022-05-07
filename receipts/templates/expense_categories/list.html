@@ -1,0 +1,19 @@
+{%extends 'base.html'%} {%block content%}
+
+  <main>
+    <h1>Expenses</h1>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Number of Receipts</th>
+        </thead>
+        <tbody>
+          {% for item in categories_list %}
+          <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.receipts.all|length}}</td>
+          </tr>
+            {% endfor %}
+        </tbody>
+      </main>
+{%endblock content%}
